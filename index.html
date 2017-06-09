@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<!--
+   _____
+  |
+  |
+  |   ___          |
+  |_____| (_) () ( ) ()|
+   	   
+   -->
+<html>
+	<head>
+		<title>uuuu.lt</title>
+		<meta charset="UTF-8">
+		<meta name="description" content="uuuu">
+		<link rel="stylesheet" type="text/css" href="css/main.css">
+		<script src="jquery-3.1.1.js"></script>
+		<link href="https://fonts.googleapis.com/css?family=Poiret+One" rel='stylesheet'>
+		<link rel="icon" href="images/unew.png">
+	<body>  
+		<main>
+			<section>
+				<img class="rutuliukas" src="images/redcircle.png">
+				<section style="position: relative;">
+					<a href="https://www.facebook.com">
+						<img class="small1 links" src="images/facebook.jpg" alt="facebook">
+					</a>
+					<a href="https://www.vimeo.com">
+						<img class="small2 links" src="images/vimeo.png" alt="vimeo">
+					</a>
+					<a href="https://www.youtube.com">
+						<img class="small3 links" src="images/youtube.png" alt="youtube">
+					</a>
+					<a href="https://www.instagram.com/uuuu.lt/">
+						<img class="small4 links" src="images/instagram.jpg" alt="instagram">
+					</a>
+				</section>
+				<img onclick="show()" class="rutuliukas2" src="images/redcircle.png" alt="recording">
+				<img class="ranka" src="images/ranka.gif" alt="showing_hand">
+<!-- 				<img class="paprasta" src="images/unew.png"> -->
+			</section>
+			<audio id="sound1" src="sounds/uuu_01.mp3"></audio>
+			<audio id="sound2" src="sounds/uuu_02.mp3"></audio>
+			<audio id="sound3" src="sounds/uuu_03.mp3"></audio>
+			<audio id="sound4" src="sounds/uuu_04.mp3"></audio>
+			<div id="objektai">
+				<img onmouseover="playSound(1)" onmouseout="stopSound(1)" class="parallax first" data-rellax-speed="1" id="obj1" src="images/figuros1/F1.png" style="margin-top: 190px; margin-left: 70%; margin-right: 60%;">
+				<img onmouseover="playSound(2)" onmouseout="stopSound(2)" class="parallax" data-rellax-speed="-2" id="obj2" src="images/figuros1/F2.png" style="margin-top: 230px; margin-left: 23%; margin-right: 40%;">
+				<img onmouseover="playSound(3)" onmouseout="stopSound(3)" class="parallax" data-rellax-speed="3" id="obj3" src="images/figuros1/F11.png" style="margin-top: 170px; margin-left: 85%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="3" id="obj" src="images/figuros1/F3.png" style="margin-top: 150px; margin-left: 49%; margin-right: 28%;">
+			</div>
+			<div id="objektai">
+				<img onmouseover="playSound(4)" onmouseout="stopSound(4)" class="parallax" data-rellax-speed="-2" id="obj" src="images/figuros1/F10.png" style="margin-top: 10px; margin-left: 13%; margin-right: 60%;">
+				<img class="parallax" data-rellax-speed="1" id="obj1" src="images/figuros1/F2.png" style="margin-top: 150px; margin-left: 81%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="3" id="obj2" src="images/figuros1/F8.png" style="margin-top: 80px; margin-left: 41%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj1" src="images/figuros1/F4.png" style="margin-top: 10px; margin-left: 66%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="2" id="obj1" src="images/figuros1/F13.png" style="margin-top: 70px; margin-left: 20%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-2" id="obj2" src="images/figuros1/F12.png" style="margin-top: 1px; margin-left: 22%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="1" id="obj3" src="images/figuros1/F3.png" style="margin-top: 100px; margin-left: 85%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj1" src="images/figuros1/F5.png" style="margin-top: 60px; margin-left: 33%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj2" src="images/figuros1/F18.png" style="margin-top: 20px; margin-left: 7%; margin-right: 88%;">
+				<img class="parallax" data-rellax-speed="2" id="obj1" src="images/figuros1/F6.png" style="margin-top: 100px; margin-left: 60%; margin-right: 8%;">
+			</div>
+			<div id="objektai">
+				<img onmouseover="playSound(4)" onmouseout="stopSound(4)" class="parallax" data-rellax-speed="-2" id="obj" src="images/figuros1/F10.png" style="margin-top: 10px; margin-left: 13%; margin-right: 60%;">
+				<img class="parallax" data-rellax-speed="1" id="obj1" src="images/figuros1/F2.png" style="margin-top: 150px; margin-left: 81%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="3" id="obj2" src="images/figuros1/F8.png" style="margin-top: 80px; margin-left: 41%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj3" src="images/figuros1/F4.png" style="margin-top: 10px; margin-left: 66%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="2" id="obj1" src="images/figuros1/F13.png" style="margin-top: 70px; margin-left: 20%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-2" id="obj2" src="images/figuros1/F12.png" style="margin-top: 1px; margin-left: 22%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="1" id="obj3" src="images/figuros1/F3.png" style="margin-top: 100px; margin-left: 85%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj1" src="images/figuros1/F5.png" style="margin-top: 60px; margin-left: 33%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj2" src="images/figuros1/F18.png" style="margin-top: 20px; margin-left: 7%; margin-right: 88%;">
+				<img class="parallax" data-rellax-speed="2" id="obj3" src="images/figuros1/F6.png" style="margin-top: 100px; margin-left: 60%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="0" id="obj1" src="images/figuros1/F10.png" style="margin-top: 10px; margin-left: 44%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-1" id="obj2" src="images/figuros1/F17.png" style="margin-top: 1px; margin-left: 31%; margin-right: 70%;">
+				<img class="parallax" data-rellax-speed="2" id="obj3" src="images/figuros1/F19.png" style="margin-top: 50px; margin-left: 75%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="3" id="obj1" src="images/figuros1/F2.png" style="margin-top: 170px; margin-left: 26%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-4" id="obj2" src="images/figuros1/F1.png" style="margin-top: 10px; margin-left: 85%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="1" id="obj3" src="images/figuros1/F18.png" style="margin-top: 40px; margin-left: 58%; margin-right: 8%;">
+				<img class="parallax" data-rellax-speed="-10" id="obj1" src="images/figuros1/F4.png" style="margin-top: 150px; margin-left: 21%; margin-right: 88%;">
+			</div>
+			<div class="video" >
+				<video id="patsvideo" width="100%" height="100%" name="Video Name" src="images/video.mp4" autoplay="true">
+					<source src="images/video.MOV" type="video/MOV">
+  					<source src="images/video.ogg" type="video/ogg">
+  					<source src="images/video.mp4" type="video/mp4">
+				</video>
+			</div>
+			<div class="info" onclick="show()">
+				<p class="text1"> until someone invents an app <br/>
+					that seamlessly blends audio, <br/> 
+					video and virtual reality components together, <br/>
+					you can just contact us to do it </p>
+				<p class="text2">life is like an audiovisual product,<br>
+					if you don't have a concept,<br> it's empty</p>
+				<p class="text3">why did an audiovisual freelancer <br>cross the street?<br>
+					because it might look way <br> better in a wide shot</p>
+			</div>
+			<!-- <div class="video360">
+				<img src="images/360.png">
+			</div> -->
+			<div class="table">
+				<div class="contacts" id="contacts" onclick="duplicate()">
+					<button class="x">x</button>
+					<p class="mail" style="color: black">
+						u@uuuu.lt <br>
+						+370 627 53 236
+					</p>
+				</div>
+				<div class="contacts1" id="contacts1" onclick="duplicate2()" ondblclick="hide_table2()">
+					<button class="x">x</button>
+					<p class="mail1" style="color: #000000">
+						u@uuuu.lt <br>
+						+370 627 53 236
+					</p>
+				</div>
+				<div class="contacts2" id="contacts2" onclick="hide_table()">
+					<button class="x">x</button>
+					<p class="mail2" style="color: #000000;">
+						u@uuuu.lt <br>
+						+370 627 53 236
+					</p>
+				</div>
+			</div>
+		</main>
+		<script type="text/javascript" src="script/script.js"></script>
+		<script type="text/javascript" src="lib/rellax-master/rellax.js"></script>
+	</body>
+</html>

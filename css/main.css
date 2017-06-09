@@ -1,0 +1,426 @@
+*{
+	margin: 0;
+	padding: 0;
+		overflow-x: hidden;
+}
+
+body{
+	height: 100%;
+	width: 100%;
+	background: #000;
+	color: rgba(0, 0, 0,1);
+	overflow-x: hidden;
+}
+
+div{
+	height: 900px;
+	overflow-y: hidden;
+}
+
+section{
+	position: fixed;
+	left: 0;
+	right: 0;
+	-webkit-animation-name: moved;
+	-moz-animation-name: moved;
+	        animation-name: moved;
+	-webkit-animation-delay: 0s;
+	-moz-animation-delay: 0s;
+	        animation-delay: 0s;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+.rutuliukas{
+	height: 90px; 
+	width: auto; 
+	margin-top: 0px;
+	display: block; 
+	margin: auto;
+}
+
+.paprasta{
+	opacity: 0;
+	top: 500px;
+	display: block; 
+	margin: auto;
+	height: 220px; 
+	width: auto;
+	-webkit-animation-name: fadeInn;
+	-moz-animation-name: fadeInn;
+	        animation-name: fadeInn;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-delay: 2.5s;
+	-moz-animation-delay: 2.5s;
+	        animation-delay: 2.5s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+}
+
+@keyframes flash{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes moved{
+	0%{
+		top: -20%;
+	}
+	100%{
+		top: 40%;
+	}
+}
+
+@keyframes moved{
+	0%{
+		top: -20%;
+	}
+	100%{
+		top: 40%;
+	}
+}
+
+@-webkit-keyframes load{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes load{
+	from{
+		opacity: 0.2;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@-webkit-keyframes sizeup1{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:28px;
+		width: auto;
+	}
+}
+
+@keyframes sizeup1{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:28px;
+		width: auto;
+	}
+}
+
+@-webkit-keyframes sizeup2{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:30px;
+		width: auto;
+	}
+}
+
+@keyframes sizeup2{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:30px;
+		width: auto;
+	}
+}
+
+@-webkit-keyframes sizeup3{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:34px;
+		width: auto;
+	}
+}
+
+@keyframes sizeup3{
+	from{
+		height: 10px;
+		width: auto;
+	}
+	to{
+		height:34px;
+		width: auto;
+	}
+}
+
+@-webkit-keyframes fadeInn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInn{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+#objektai{
+	opacity: 0;
+	-webkit-animation-name: load;
+	-moz-animation-name: load;
+	        animation-name: load;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	        animation-fill-mode: forwards;
+	-webkit-animation-duration: 6s;
+	-moz-animation-duration: 6s;
+	        animation-duration: 6s;
+}
+
+
+#obj1{
+	-webkit-animation-name: sizeup1;
+	-moz-animation-name: sizeup1;
+	        animation-name: sizeup1;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode:forwards;
+	        animation-fill-mode: forwards;
+}
+
+#obj2{
+	-webkit-animation-name: sizeup2;
+	-moz-animation-name: sizeup2;
+	        animation-name: sizeup2;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode:forwards;
+	        animation-fill-mode: forwards;
+}
+
+#obj3{
+	-webkit-animation-name: sizeup3;
+	-moz-animation-name: sizeup3;
+	        animation-name: sizeup3;
+	-webkit-animation-duration: 4s;
+	-moz-animation-duration: 4s;
+	        animation-duration: 4s;
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode:forwards;
+	        animation-fill-mode: forwards;
+}
+
+.video{
+	text-align: center;
+	position: relative;
+}
+
+.video-overlay {
+	background-color: black;
+	opacity: 0.5;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1001;
+}
+
+video{
+	position: relative;
+	margin-bottom: 0px;
+	z-index: 1000;
+	width: 100%;
+}
+
+.links{
+	height: 36px;
+	width: auto;
+	float: right;
+	margin-top: 0%;
+	opacity: 0;
+	margin-right: 2.4%;
+	display: none;
+}
+
+.rutuliukas2{
+	height: 90px; 
+	width: auto; 
+	margin-left: 87%;
+	display: none; 
+	animation-name: flash;
+	animation-duration: 1.2s;
+	animation-delay: 0s; 
+	animation-iteration-count: infinite;
+	z-index: 2;
+}
+
+.ranka{
+	height: 150px;
+	width: auto;
+	animation: none;
+	float: right;
+	display: none;
+	opacity: 1;
+	margin-top: -5%;
+	margin-right: 1%;
+	z-index: 1;
+}
+
+@keyframes wait{
+	from{
+		opacity: 0;
+	}
+	to{
+		opacity: 1;
+	}
+}
+
+.info{
+	text-align: center;
+}
+
+p{
+	marker: auto;
+	font-size: 2.2em;
+	margin-top: 15vw;
+	line-height: 200%;
+	text-align: center;
+	font-family: Poiret One;
+	position: relative;
+	margin: 0 auto;
+	left: 0;
+	right: 0;
+}
+
+.text1{
+	position:absolute;
+	margin-top: 15vw;
+	display: block;
+	color: white;
+}
+
+.text2{
+	position:absolute;
+	margin-top: 15vw;
+	display: none;
+	color: white;
+}
+
+.text3{
+	position:absolute;
+	margin-top: 15vw;
+	display: none;
+	color: white;
+}
+
+.video360{
+	text-align: center;
+	max-width: 100%;
+}
+
+.table{
+	text-align: center;
+}
+
+.contacts{
+	margin: auto;
+	border: 3px solid black;
+	height: 32%;
+	width: 40%;
+	margin-top: 5%;
+	padding-right: 2%;
+	padding-left: 2%;
+	position: relative;
+	background-color: rgba(240, 240, 240, 1);
+}
+
+.x{
+	margin-top: 0;
+	font-size: 2em;
+	float: right;
+	border: none;
+	background-color: rgba(240, 240, 240, 1);
+	}
+
+.mail{
+	margin-top: 10%;
+	display: inline-block;
+	font-size: 2em;
+	color: rgba(0, 0, 0, 1);
+}
+
+.mail1{
+	margin-top: 10%;
+	display: inline-block;
+	font-size: 2em;
+	display: none;
+}
+
+.mail2{
+	margin-top: 10%;
+	display: inline-block;
+	font-size: 2em;
+	display: none;
+}
+
+.contacts1{
+	margin: auto;
+	border: 3px solid black;
+	height: 32%;
+	width: 40%;
+	margin-top: -15%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(240, 240, 240, 1);
+	position: absolute;
+	margin-left: 24%;
+	display: none;
+}
+
+.contacts2{
+	margin: auto;
+	border: 3px solid black;
+	height: 32%;
+	width: 40%;
+	margin-top: -10%;
+	padding-right: 2%;
+	padding-left: 2%;
+	background-color: rgba(240, 240, 240, 1);
+	position: absolute;
+	margin-left: 20%;
+	display: none;
+	}
